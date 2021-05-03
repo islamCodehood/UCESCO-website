@@ -1,0 +1,422 @@
+:root {
+  /*COLORS*/
+  --purple: #cf5487;
+  --blue: #546ecf;
+  --brown: #c77225;
+  --gray: #f4f3f6;
+  --light-brown: #c29841;
+  --blue-gray: #979fb6;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--gray);
+}
+
+header {
+  background: url(../img/hero.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
+
+nav {
+  padding-top: 16px;
+}
+
+/*NAV MENU*/
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  padding: 0 12px;
+}
+
+nav a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+}
+
+.nav-btn {
+  background-color: var(--white);
+  color: var(--purple);
+  font-weight: 600;
+  padding: 8px 20px;
+  border: none;
+}
+
+nav a.nav-btn:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+}
+
+/*LOGO*/
+
+.logo {
+  color: var(--white);
+}
+
+.logo img {
+  margin-right: 12px;
+}
+
+.logo h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+}
+
+/*HERO TEXT*/
+
+.hero-txt {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 48px;
+  letter-spacing: 1px;
+  width: 350px;
+  color: var(--white);
+  position: relative;
+  top: 70px;
+}
+
+.hero-btn {
+  background-color: var(--light-brown);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 24px;
+}
+
+/*ASIDE*/
+
+aside {
+  height: 270px;
+  margin-top: -50px;
+}
+aside > div {
+  padding: 44.3px 49.5px;
+  color: var(--white);
+}
+
+aside > div:nth-of-type(1) {
+  background-color: var(--purple);
+}
+aside > div:nth-of-type(2) {
+  background-color: var(--blue-gray);
+}
+aside div:nth-of-type(3) {
+  background: url(../img/aside-img.jpg) no-repeat bottom left;
+  background-size: 135%;
+  position: relative;
+}
+
+aside div:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  z-index: 1;
+}
+
+.btn-aside {
+    padding: 6px 12px;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-aside {
+    background: var(--blue-gray);
+    margin-top: 12px;
+}
+
+.btn-aside:hover {
+  color: var(--blue-gray);
+}
+
+button[type="submit"].btn-aside {
+    background: var(--purple);
+    margin: 0;
+}
+
+button[type="submit"].btn-aside:hover {
+  color: var(--white);
+  background: var(--light-brown);
+}
+aside .submit-form {
+    margin-top: 12px;
+}
+.btn-aside-donate {
+    background: var(--light-brown);
+    z-index: 10;
+    position: absolute;
+    bottom: 50px;
+}
+
+.btn-aside-donate:hover {
+  color: var(--light-brown);
+  background: var(--white);
+}
+
+input[type="email"] {
+    border: none;
+    padding: 6px 12px;
+
+}
+
+input[type="email"]::-webkit-input-placeholder { /* Edge */
+  color: var(--blue-gray);
+  font-weight: 300;
+}
+
+input[type="email"]:-ms-input-placeholder { /* Internet Explorer */
+  color: var(--blue-gray);
+  font-weight: 100;
+}
+
+input[type="email"]::placeholder {
+  color: var(--blue-gray);
+  font-weight: 100;
+}
+
+aside h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+aside p {
+    margin: 0;
+}
+
+a.lg-invisible:hover .arrow-move {
+  transform: translateX(10px);
+}
+
+a.sm-invisible:hover .arrow-move {
+  transform: translateX(10px);
+}
+
+@media screen and (max-width: 992px) {
+  .sm-invisible {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lg-invisible {
+    display: none !important;
+  }
+}
+
+/**SECTIONS**/
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.who-section {
+  color: var(--brown)
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.who-title::before {
+  content: "";
+  position: absolute;
+  width: 38%;
+  height: 4px;
+  background: var(--purple);
+  bottom: -1px;
+  left: 0;
+}
+/**IFRAME**/
+@media (min-width: 375px) {
+  iframe {
+    min-width: 370px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 576px) {
+  iframe {
+    width: 576px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  iframe {
+    width: 991px;
+    height: 400px;
+  }
+}
+
+/*WHAT SECTION*/
+.what-section {
+  background: var(--brown);
+  color: var(--white);
+  position: relative;
+} 
+
+.what-title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.what-title::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 4px;
+  background: var(--gray);
+  bottom: -1px;
+  left: 0;
+}
+
+/*WHAT WE DO CARDS*/
+.card-custom {
+  width: 300px;
+  height: 340px;
+  border-radius: 14px;
+  padding: 24px;
+  position: relative;
+}
+
+
+.card-custom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  background-color: rgba(131, 96, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+.card-custom:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  background-color: rgba(131, 96, 0, .85);
+}
+
+
+.card-custom.card-1 {
+  background: url(../img/women-africa.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-custom.card-2 {
+  background: url(../img/water.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-custom.card-3 {
+  background: url(../img/food-africa.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-custom.card-4 {
+  background: url(../img/nurse.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-custom.card-5 {
+  background: url(../img/school-africa.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-custom.card-6 {
+  background: #e44e29;
+}
+
+.card-custom-title,
+.card-custom-body {
+  z-index: 1;
+}
+
+.card-custom-title,
+.card-custom-body {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-custom-title h3,
+.card-custom-title a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.card-custom-body {
+  top: 50px;
+ 
+}
+
+.more {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.more a {
+  display: block;
+}
+
+div.arrow-move {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.more a:hover .arrow-move {
+  transform: translateX(10px);
+}
+
+
