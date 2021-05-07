@@ -495,13 +495,13 @@ div.arrow-move {
   position: relative;
   display: inline-block;
   line-height: 70px;
+  color: var(--purple);
 }
 
 .impact-title-sm {
   font-weight: 600;
   font-size: 42px;
   font-style: italic;
-  
   text-transform: uppercase;
   margin-bottom: 30px;
   width: 100px;
