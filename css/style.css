@@ -147,16 +147,16 @@ aside div:nth-of-type(3)::after {
 }
 
 .btn-aside {
-    padding: 6px 12px;
-    border: none;
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 600;
+  padding: 6px 12px;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .btn-aside {
-    background: var(--blue-gray);
-    margin-top: 12px;
+  background: var(--blue-gray);
+  margin-top: 12px;
 }
 
 .btn-aside:hover {
@@ -164,8 +164,8 @@ aside div:nth-of-type(3)::after {
 }
 
 button[type="submit"].btn-aside {
-    background: var(--purple);
-    margin: 0;
+  background: var(--purple);
+  margin: 0;
 }
 
 button[type="submit"].btn-aside:hover {
@@ -173,13 +173,13 @@ button[type="submit"].btn-aside:hover {
   background: var(--light-brown);
 }
 aside .submit-form {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 .btn-aside-donate {
-    background: var(--light-brown);
-    z-index: 10;
-    position: absolute;
-    bottom: 50px;
+  background: var(--light-brown);
+  z-index: 10;
+  position: absolute;
+  bottom: 50px;
 }
 
 .btn-aside-donate:hover {
@@ -188,17 +188,18 @@ aside .submit-form {
 }
 
 input[type="email"] {
-    border: none;
-    padding: 6px 12px;
-
+  border: none;
+  padding: 6px 12px;
 }
 
-input[type="email"]::-webkit-input-placeholder { /* Edge */
+input[type="email"]::-webkit-input-placeholder {
+  /* Edge */
   color: var(--blue-gray);
   font-weight: 300;
 }
 
-input[type="email"]:-ms-input-placeholder { /* Internet Explorer */
+input[type="email"]:-ms-input-placeholder {
+  /* Internet Explorer */
   color: var(--blue-gray);
   font-weight: 100;
 }
@@ -209,13 +210,13 @@ input[type="email"]::placeholder {
 }
 
 aside h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 aside p {
-    margin: 0;
+  margin: 0;
 }
 
 a.lg-invisible:hover .arrow-move {
@@ -246,7 +247,7 @@ section {
 }
 
 .who-section {
-  color: var(--brown)
+  color: var(--brown);
 }
 
 .section-title {
@@ -301,7 +302,7 @@ section {
   background: var(--brown);
   color: var(--white);
   position: relative;
-} 
+}
 
 .what-title {
   position: relative;
@@ -328,7 +329,6 @@ section {
   position: relative;
 }
 
-
 .card-custom::after {
   content: "";
   position: absolute;
@@ -348,9 +348,8 @@ section {
   height: 100%;
   width: 100%;
   border-radius: 14px;
-  background-color: rgba(131, 96, 0, .85);
+  background-color: rgba(131, 96, 0, 0.85);
 }
-
 
 .card-custom.card-1 {
   background: url(../img/women-africa.jpg) no-repeat center;
@@ -399,7 +398,6 @@ section {
 
 .card-custom-body {
   top: 50px;
- 
 }
 
 .more {
@@ -419,4 +417,96 @@ div.arrow-move {
   transform: translateX(10px);
 }
 
+/*OUR IMPACT*/
+
+.card-impact {
+  width: 250px;
+  height: 145px;
+  border: 6px solid var(--purple);
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: 37px;
+  left: 45px;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.counter-person {
+  background: var(--gray);
+  display: inline-block;
+  position: absolute;
+  top: 37px;
+  left: 210px;
+}
+.counter-more {
+  background: var(--gray);
+  display: inline-block;
+  position: relative;
+  top: 37px;
+  left: 130px;
+}
+.counter-more a {
+  text-decoration: none;
+  color: #000;
+}
+
+.counter-more a:hover .arrow-move {
+  transform: translateX(10px);
+}
+.counter-person span {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.counter-more div {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.counter-impact {
+  position: absolute;
+  top: 145px;
+  left: 0px;
+}
+
+.counter-impact p {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.m-custom {
+  margin-bottom: 80px;
+}
+
+.impact-title {
+  font-weight: 600;
+  font-size: 82px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  line-height: 70px;
+}
+
+.impact-title-sm {
+  font-weight: 600;
+  font-size: 42px;
+  font-style: italic;
+  
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  line-height: 35px;
+}
 
