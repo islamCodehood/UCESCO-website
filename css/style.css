@@ -510,3 +510,40 @@ div.arrow-move {
   line-height: 35px;
 }
 
+/*PARTNERS SECTION*/
+
+/*WHAT SECTION*/
+.partners-section {
+  background: var(--brown);
+  color: var(--white);
+  position: relative;
+}
+
+.partners-title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.partners-title::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 4px;
+  background: var(--gray);
+  bottom: -1px;
+  left: 0;
+}
+
+
+/*SLIDERS*/
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  max-height: 100vh;
+  border: 3px dotted;
+}
+
