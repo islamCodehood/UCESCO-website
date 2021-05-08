@@ -16,6 +16,10 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <!--META TAGS-->
     <title>UCESCO Africa</title>
@@ -459,17 +463,22 @@
           <h2 class="impact-title sm-invisible">our impact</h2>
         </div>
       </section>
-      <div class="d-none">
         <!--PARTNERS-->
-        <section>
+        <section class="partners-section">
           <div class="container">
-            <h2 class="section-title">partners</h2>
+            <h2 class="section-title partners-title">partners</h2>
             <!--PARTNERS LOGOS-->
-            <div></div>
+            <div id="my-keen-slider" class="keen-slider">
+              <div class="keen-slider__slide number-slide1">1</div>
+              <div class="keen-slider__slide number-slide2">2</div>
+              <div class="keen-slider__slide number-slide3">3</div>
+              <div class="keen-slider__slide number-slide4">4</div>
+              <div class="keen-slider__slide number-slide5">5</div>
+              <div class="keen-slider__slide number-slide6">6</div>
+            </div>
             <!--END OF PARTNERS LOGOS-->
           </div>
         </section>
-      </div>
       
     </main>
     <div class="d-none">
@@ -549,6 +558,8 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
