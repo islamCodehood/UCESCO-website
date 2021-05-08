@@ -6,7 +6,7 @@ var slider = new KeenSlider("#my-keen-slider", {
     mode: "snap",
     breakpoints: {
       "(min-width: 768px)": {
-        slidesPerView: 2,
+        slidesPerView: 3,
         mode: "free-snap",
       },
       "(min-width: 1200px)": {
