@@ -23,13 +23,10 @@ const stopCounting = (countingInterval) => {
 
 const timeInterval = (number) => {
   if (number >= 5000) {
-      console.log("big" + number)
     return 0.1;
   } else if (number >= 500) {
-    console.log("med" + number)
     return 1.5;
   } else {
-    console.log(number)
       return 15
   }
 };
@@ -51,14 +48,12 @@ detectIntersection = () => {
         { rootMargin: "0px 0px -300px 0px" }
       );
     
-      //Observe sections
       observer.observe(impactSection);
     }
 }
 
 
 const initApp = () => {
-  console.log("started");
   detectIntersection();
 };
 
