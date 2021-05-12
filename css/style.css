@@ -426,7 +426,8 @@ div.arrow-move {
   position: relative;
 }
 
-.counter {
+.counter,
+.counter-person-final {
   position: absolute;
   top: 37px;
   left: 45px;
@@ -434,6 +435,7 @@ div.arrow-move {
   font-weight: 700;
   color: var(--purple);
 }
+
 
 .counter-person {
   background: var(--gray);
@@ -510,9 +512,45 @@ div.arrow-move {
   line-height: 35px;
 }
 
-/*PARTNERS SECTION*/
+.animate__flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
 
-/*WHAT SECTION*/
+.animate__animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+/*PARTNERS SECTION*/
 .partners-section {
   background: var(--brown);
   color: var(--white);
@@ -546,4 +584,5 @@ div.arrow-move {
   max-height: 100vh;
   border: 3px dotted;
 }
+
 
